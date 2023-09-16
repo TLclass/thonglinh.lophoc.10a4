@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LỚP-10A4 | NEWS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="img/log_Thonglinh.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSmall.css">
+    <!--Link-Font-Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Main-Header-->
+    <header id="mainHeader">
+        <!--Logo-->
+        <div id="boxLogo" style="display: flex; align-items: center; background-color: blue;">
+            <!--Container-Logo-->
+            <a href="http://thonglinh.dongthap.edu.vn/" target="_blank" rel="noopener noreferrer">
+            <div id="boxTemp2" style="display: flex; align-items: center; justify-content: center;">
+                <img src="img/log_Thonglinh.png" id="logo">
+            </div>
+            </a>
+        </div>
+        <!--Name-Class-->
+        <h3> 10A4 | NEWS </h3>
+    </header>
+
+
+    <div id="container">
+        <div id="QC">
+            <div id="solog" >
+                <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> NĂNG ĐỘNG <h3>|</h3> <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: blue;">SÁNG TẠO</h3></h3>
+                <img src="img/college project-bro.png" style="height: 90%; width: auto;">
+            </div>
+            <div id="newDay">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; justify-content: center; width: 100%;">
+                    <h3 id="dayofweek" style="color: blue;"></h3>
+                    <h3 style="margin-left: 10px;" id="date"></h3>
+                    <div id="boxNowtimes">
+                        <h3 id="time"></h3>
+                    </div>
+                </div>
+                <center><h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;">Buổi sáng</h2></center>
+                <table id="newDaytable">
+                    <tr>
+                        <th>Tiết 1</th>
+                        <th>Tiết 2</th>
+                        <th>Tiết 3</th>
+                        <th>Tiết 4</th>
+                        <th>Tiết 5</th>
+                    </tr>
+                    <tr>
+                        <td id="bnc1" style="text-align: center; height: 20px;"></td>
+                        <td id="bnc2" style="text-align: center; height: 20px;"></td>
+                        <td id="bnc3" style="text-align: center; height: 20px;"></td>
+                        <td id="bnc4" style="text-align: center; height: 20px;"></td>
+                        <td id="bnc5" style="text-align: center; height: 20px;"></td>
+                    </tr>
+                </table>
+
+                <center><h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;">Buổi chiều</h2></center>
+                <table id="newDaytable">
+                    <tr>
+                        <th>Tiết 1</th>
+                        <th>Tiết 2</th>
+                        <th>Tiết 3</th>
+                        <th>Tiết 4</th>
+                        <th>Tiết 5</th>
+                    </tr>
+                    <tr>
+                        <td id="bcbnc1" style="text-align: center; height: 20px;"></td>
+                        <td id="bcbnc2" style="text-align: center; height: 20px;"></td>
+                        <td id="bcbnc3" style="text-align: center; height: 20px;"></td>
+                        <td id="bcbnc4" style="text-align: center; height: 20px;"></td>
+                        <td id="bcbnc5" style="text-align: center; height: 20px;"></td>
+                    </tr>
+                </table>
+                    <div id="Learning">
+                        Đang ngoài giờ học
+                    </div>
+                
+            </div>
+            <div id="iconClick">
+            <i class="fa fa-chevron-circle-left" aria-hidden="true" onclick="clickLeft()"></i>
+            <i class="fa fa-chevron-circle-right" aria-hidden="true" onclick="clickRight()"></i>
+            </div>
+        </div>
+
+
+
+
+        <!--Notification-->
+        <a href="thongbao.html" style="text-decoration: none;">
+        <div id="notify">
+            <div style="display: flex; align-items: center; justify-content: left;">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <h3 style="margin-left: 10px; color: black;">Thông báo !</h3>
+            </div>
+                <i class="fa fa-angle-right" aria-hidden="true" style="text-align: right; margin-right: 20px; color: black;"></i>    
+        </div></a>
+        <!--Hoat Dong-->
+        <a href="news.html" style="text-decoration: none;"><div id="notify">
+            <div style="display: flex; align-items: center; justify-content: left;">
+                <i class="fa fa-fire" style="color: blue; font-size: 20px; margin-left: 20px;" aria-hidden="true"></i>
+                <h3 style="margin-left: 10px; color: black;"> Hoạt động </h3>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div style="width: 20px; height: 20px; background-color: red; border-radius: 10px; margin-right: 20px; display: flex; align-items: center; justify-content: center; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 10px; font-weight: bold;"> 2 </div>
+                <i class="fa fa-angle-right" aria-hidden="true" style="text-align: right; margin-right: 20px; color: black;"></i>
+            </div>
+        </div></a>
+        <!--TT Mon Hoc-->
+        <a href="infoMonhoc.html" style="text-decoration: none;" rel="noopener noreferrer">
+        <div id="notify">
+            <div style="display: flex; align-items: center; justify-content: left;">
+                <i class="fa fa-info-circle" style="color: blue; font-size: 20px; margin-left: 20px;" aria-hidden="true"></i>
+                <h3 style="margin-left: 10px; color: black;">Thông tin các bộ môn...</h3>
+            </div>
+            <i class="fa fa-angle-right" aria-hidden="true" style="text-align: right; margin-right: 20px; color: black;"></i>
+        </div>
+        </a>
+        <!--TT Lop Hoc-->
+        <a href="info10A4.html" style="text-decoration: none;"><div id="notify">
+            <div style="display: flex; align-items: center; justify-content: left;">
+                <i class="fa fa-users" style="color: blue; font-size: 20px; margin-left: 20px;" aria-hidden="true"></i>
+                <h3 style="margin-left: 10px; color: black;">Thông tin lớp học 10A4</h3>
+            </div>
+            <i class="fa fa-angle-right" aria-hidden="true" style="text-align: right; margin-right: 20px; color: black;"></i>
+        </div></a>
+        <!--TKB-->
+        <a href="time.html" style="text-decoration: none;"><div id="notify">
+            <div style="display: flex; align-items: center; justify-content: left;">
+                <i class="fa fa-calendar" style="color: blue; font-size: 20px; margin-left: 20px;" aria-hidden="true"></i>
+                <h3 style="margin-left: 10px; color: black;">Thời Khoá Biểu & Lịch Trực</h3>
+            </div>
+            <i class="fa fa-angle-right" aria-hidden="true" style="text-align: right; margin-right: 20px; color: black;"></i>
+        </div></a>
+        <!--HLHK-->
+        <a href="hocluc-hanhkiem.html" style="text-decoration: none;">
+        <div id="notify">
+            <div style="display: flex; align-items: center; justify-content: left;">
+                <i class="fa fa-graduation-cap" style="color: blue; font-size: 20px; margin-left: 20px;" aria-hidden="true"></i>
+                <h3 style="margin-left: 10px; color: black;">Cách Xếp Loại Học Lực & Hạnh Kiểm</h3>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div style="width: 20px; height: 20px; background-color: red; border-radius: 10px; margin-right: 20px; display: flex; align-items: center; justify-content: center; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 10px; font-weight: bold;"> 1 </div>
+                <i class="fa fa-angle-right" aria-hidden="true" style="text-align: right; margin-right: 20px; color: black;"></i>
+            </div>
+        </div></a>
+        <!--Documents Learn-->
+        <a href="docLearn.html" style="text-decoration: none;">
+        <div id="notify">
+            <div style="display: flex; align-items: center; justify-content: left;">
+                <i class="fa fa-file-text" style="color: blue; font-size: 20px; margin-left: 20px;" aria-hidden="true"></i>
+                <h3 style="margin-left: 10px; color: black;"> Tài liệu học tập </h3>
+            </div>
+            <i class="fa fa-angle-right" aria-hidden="true" style="text-align: right; margin-right: 20px; color: black;"></i>
+        </div></a>
+        <!--Noi qui-->
+        <a href="noiquy.html" style="text-decoration: none;">
+        <div id="notify">
+            <div style="display: flex; align-items: center; justify-content: left;">
+                <i class="fa fa-sticky-note" style="color: blue; font-size: 20px; margin-left: 20px;" aria-hidden="true"></i>
+                <h3 style="margin-left: 10px; color: black;"> Nội quy </h3>
+            </div>
+            <i class="fa fa-angle-right" aria-hidden="true" style="text-align: right; margin-right: 20px; color: black;"></i>
+        </div></a>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

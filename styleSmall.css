@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1020px) {
+    #container {
+        width: 100%;
+    }
+    #solog, #newDay {
+        display: flex;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .BoxMon {
+        height: 200px;
+    }
+    .BoxMon img {
+        margin: 0px auto;
+    }
+    .imgTinh {
+        width: 95%;
+    }
+    #solog, #newDay {
+        width: 100%;
+    }
+    #newDay {
+        display: none;
+    }
+    #iconClick {
+        display: block;
+    }
+    #Learning {
+        margin-left: -30%;
+    }
+}
+@media only screen and (max-width: 1595px) {
+    #navbar {
+        width: calc(100% - 20px);
+    }
+}

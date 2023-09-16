@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    background: #ddd;
+}
+#mainHeader {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blue;
+    padding-top: 10px;
+    border-bottom: solid 5px white;
+    box-shadow: none;
+}
+#mainHeader h3 {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+#logo {
+    height: 65px;
+    width: auto;
+}
+#boxTemp2 {
+    width: 70px;
+    height: 70px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: -2px;
+}
+
+
+#container {
+    margin: 0 auto;
+    width: 1020px;
+}
+#QC {
+    width: 98%;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+#solog {
+    width: 50%; height: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+}
+#newDay {
+    width: 50%; height: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+}
+.fa-chevron-circle-left {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.125;
+    z-index: 2;
+}
+.fa-chevron-circle-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 2;
+}
+#iconClick {
+    display: none;
+}
+#boxNowtimes {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px 0.5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#newDaytable {
+    width: 98%;
+}
+#newDaytable th {
+    width: 20%;
+    border: solid 1px black;
+}
+#newDaytable td {
+    width: 20%;
+    border: solid 1px black;
+}
+#Learning {
+    width: 65%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ddd;
+    margin-left: 0;
+    border: solid 1px black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#notify {
+    width: 98%;
+    padding: 5px 0;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.fa-bell {
+    color: blue;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.BoxMon {
+    margin: 10px auto 0;
+    width: 98%;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.BoxMon img {
+    height: 90%;
+    width: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#infoGV {
+    margin: 0 auto;
+}
+#navbar {
+    width: 1595px;
+    margin: 10px auto 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    overflow: auto;
+}
+.boxItems {
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: black;
+    margin-right: 10px;
+    user-select: none;
+}
+
+.containerNews {
+    width: calc(98% - 20px);
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px
+}
+.containerNews p {
+    text-indent: 20px;
+}
+.content {
+    width: 98%;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.content2 {
+    width: 98%;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.content2 a {
+    margin-top: 10px;
+}
+.imgBoxcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.day table {
+    width: 100%;
+}
+.day tr th {
+    width: 14%;
+    text-align: center;
+    border: solid 1px black;
+}
+.day tr td {
+    width: 14%;
+    text-align: center;
+    border: solid 1px black;
+}
