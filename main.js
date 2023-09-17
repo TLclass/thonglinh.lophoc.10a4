@@ -168,7 +168,7 @@ var checkdayofweek2 = '#' + idtemp2;
                 var paragraph = $(data).find(checkdayofweek2 + '2');
                 // Lấy nội dung từ tệp time
                 var textContent = paragraph.text();
-                var outBN = document.querySelector("#bcbnc2bcbnc2");
+                var outBN = document.querySelector("#bcbnc2");
                 outBN.innerHTML = textContent;
             });
         });
@@ -192,7 +192,7 @@ var checkdayofweek2 = '#' + idtemp2;
                 var paragraph = $(data).find(checkdayofweek2 + '4');
                 // Lấy nội dung từ tệp time
                 var textContent = paragraph.text();
-                var outBN = document.querySelector("#bcbnc4bcbnc4");
+                var outBN = document.querySelector("#bcbnc4");
                 outBN.innerHTML = textContent;
             });
         });
