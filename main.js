@@ -217,56 +217,61 @@ var checkdayofweek2 = '#' + idtemp2;
     var hour = currentTime.getHours(); // Lấy giờ (0-23)
     var minute = currentTime.getMinutes(); // Lấy phút
 
-    var plusHM = hour + minute + '';
+    var plusHM = '' + hour + minute ;
+    plusHM = parseInt(plusHM);
     if (dayOfWeekString == 'Chủ nhật') {
         Learning.innerHTML = 'Đang ngoài giờ học';
         Learning.style.backgroundColor = '#ddd';
     }
     else {
-        if (plusHM == '715') {
+        if (plusHM >= 715 && plusHM < 80) {
             Learning.innerHTML = 'Đang học tiết 1 (Sáng)';
             Learning.style.backgroundColor = 'yellow';
         }
-        if (plusHM == '80') {
+        else if (plusHM >= 80 && plusHM < 845) {
             Learning.innerHTML = 'Đang học tiết 2 (Sáng)';
             Learning.style.backgroundColor = 'yellow';
         }
-        if (plusHM == '845') {
+        else if (plusHM >= 845 && plusHM < 930) {
             Learning.innerHTML = 'Đang học tiết 3 (Sáng)';
             Learning.style.backgroundColor = 'yellow';
         }
-        if (plusHM == '930') {
+        else if (plusHM >= 930 && plusHM < 100) {
             Learning.innerHTML = 'Đang giải lao (Sáng)';
             Learning.style.backgroundColor = 'yellow';
         }
-        if (plusHM == '100') {
+        else if (plusHM >= 100 && plusHM < 1045) {
             Learning.innerHTML = 'Đang học tiết 4 (Sáng)';
             Learning.style.backgroundColor = 'yellow';
         }
-        if (plusHM == '1045') {
+        else if (plusHM >= 1045 && plusHM < 1130) {
             Learning.innerHTML = 'Đang học tiết 5 (Sáng)';
             Learning.style.backgroundColor = 'yellow';
         }
-        if (plusHM == '1130') {
+        else if (plusHM >= 1130) {
             Learning.innerHTML = 'Đang ngoài giờ học';
             Learning.style.backgroundColor = '#ddd';
         }
         if (dayOfWeekString == 'Thứ hai' || dayOfWeekString == 'Thứ ba' || dayOfWeekString == 'Thứ tư') {
-            if (plusHM == '140') {
+            if (plusHM >= 140 && plusHM < 1445) {
                 Learning.innerHTML = 'Đang học tiết 3 (Chiều)';
                 Learning.style.backgroundColor = 'yellow';
             }
-            if (plusHM == '1445') {
+            else if (plusHM >= 1445 && plusHM < 150) {
                 Learning.innerHTML = 'Đang giải lao (Chiều)';
                 Learning.style.backgroundColor = '#ddd';
             }
-            if (plusHM == '150') {
+            else if (plusHM >= 150 && plusHM < 1545) {
                 Learning.innerHTML = 'Đang học tiết 4 (Chiều)';
                 Learning.style.backgroundColor = 'yellow';
             }
-            if (plusHM == '1545') {
+            else if (plusHM >= 1545 && plusHM < 1630) {
                 Learning.innerHTML = 'Đang học tiết 5 (Chiều)';
                 Learning.style.backgroundColor = 'yellow';
+            }
+            else if (plusHM >= 1630) {
+                Learning.innerHTML = 'Đang ngoài giờ học';
+                Learning.style.backgroundColor = '#ddd';
             }
         }
     }
