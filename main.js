@@ -218,14 +218,15 @@ var checkdayofweek2 = '#' + idtemp2;
     var minute = currentTime.getMinutes(); // Lấy phút
     minute = parseInt(minute);
     if (minute < 10) {
-        minute = minute + '0';
+        minute = '0' + minute;
     }
     var plusHM = '' + hour + minute ;
     plusHM = parseInt(plusHM);
     if (dayOfWeekString == 'Chủ nhật') {
         Learning.innerHTML = 'Đang ngoài giờ học';
         Learning.style.backgroundColor = '#ddd';
-    }  
+    }
+    
     else {
         if (plusHM >= 715 && plusHM < 800) {
             Learning.innerHTML = 'Đang học tiết 1 (Sáng)';
@@ -239,7 +240,7 @@ var checkdayofweek2 = '#' + idtemp2;
             Learning.innerHTML = 'Đang học tiết 3 (Sáng)';
             Learning.style.backgroundColor = 'yellow';
         }
-        else if (plusHM >= 9300 && plusHM < 1000) {
+        else if (plusHM >= 930 && plusHM < 1000) {
             Learning.innerHTML = 'Đang giải lao (Sáng)';
             Learning.style.backgroundColor = 'yellow';
         }
